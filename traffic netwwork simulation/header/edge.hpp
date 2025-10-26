@@ -1,5 +1,6 @@
 #pragma once
 #include <string>
+#include "coord.hpp"
 
 class edge{
 	private:

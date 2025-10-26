@@ -26,4 +26,5 @@ void edge::display() const{
     if (is_directed){
     	cout << " - Duong 1 chieu" << endl;
 	} else cout <<" - Duong 2 chieu" << endl;
+	cout << " - Do dai: " << weight << endl;
 }

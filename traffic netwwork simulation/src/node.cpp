@@ -11,7 +11,7 @@ node::node(string n, int i, double x_pos, double y_pos)
 //get set ------------------
 string node::get_name() const{ return name; }
 int node::get_id() const{ return id; }
-coord node::get_pos() const { return pos;}
+coord node::get_coord() const { return pos;}
 double node::get_x() const{ return pos.x; }
 double node::get_y() const{ return pos.y; }
 

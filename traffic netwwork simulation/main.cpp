@@ -10,7 +10,9 @@ int main(int argc, char** argv){
 
     m.add_node(unique_ptr<node>(new node("A", 1, 2, 3)));
 	m.add_node(unique_ptr<node>(new location("B", 2, 4, 5, 20)));
-	m.add_edge(unique_ptr<edge>(new edge("AB", 11, 1, 2, 22, 1)));
+//	m.add_edge(unique_ptr<edge>(new edge("AB", 11, 1, 2, 22, 1)));
+	m.add_edge_by_id("Duong AB", 707, 7, 3, 0);
+	m.add_edge_by_id("Duong AB", 707, 1, 2, 0);
 
     m.show_all();
 	

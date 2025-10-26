@@ -14,7 +14,7 @@ class node{
 	
 	    std::string get_name() const;
 	    int get_id() const;
-	    coord get_pos() const;
+	    coord get_coord() const;
 	    double get_x() const;
 	    double get_y() const;
 	

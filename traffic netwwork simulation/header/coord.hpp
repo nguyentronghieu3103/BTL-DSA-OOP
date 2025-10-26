@@ -7,5 +7,5 @@ struct coord{
 	coord();
 	coord(double x_pos, double y_pos);
 	
-//	double distance(const coord& other) const; 
+	double distance(const coord& a) const; 
 };
