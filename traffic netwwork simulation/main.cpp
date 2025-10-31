@@ -1,7 +1,8 @@
 #include <iostream>
 #include "map.hpp"
 //#include "edge.hpp"
-using namespace std; 
+using namespace std;
+using namespace map_types;
 
 /* run this program using the console pauser or add your own getch, system("pause") or input loop */
 
@@ -9,7 +10,7 @@ int main(int argc, char** argv){
 	map m;
 
     m.add_node(unique_ptr<node>(new node("A", 1, 2, 3)));
-	m.add_node(unique_ptr<node>(new location("B", 2, 4, 5, 20)));
+	m.add_node(unique_ptr<node>(new location("B", 2, 4, 5, 20, lo_type::RESTAURANT)));
 //	m.add_edge(unique_ptr<edge>(new edge("AB", 11, 1, 2, 22, 1)));
 	m.add_edge_by_id("Duong AB", 707, 7, 3, 0);
 	m.add_edge_by_id("Duong AB", 707, 1, 2, 0);

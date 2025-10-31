@@ -1,5 +1,6 @@
 #pragma once
 #include "coord.hpp"
+#include "types.hpp" 
 #include <string>
 
 class node{
@@ -26,9 +27,10 @@ class node{
 class location : public node{
 	private:
 	    int population;
+	    map_types::lo_type type;
 	
 	public:
-	    location(std::string n, int i, double x_pos, double y_pos, int pop);
+	    location(std::string n, int i, double x_pos, double y_pos, int pop, map_types::lo_type t);
 	    void display() const override;
 };
 

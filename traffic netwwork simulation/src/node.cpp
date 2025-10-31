@@ -1,6 +1,7 @@
 #include "node.hpp"
 #include <iostream>
 using namespace std;
+using namespace map_types;
 
 // Ham dung ----------------
 node::node() : name(""), id(0), pos(0, 0){}
@@ -27,12 +28,16 @@ void node::display() const{
 
 //=------------------- location ---------------------=
 //ham dung ---------------------
-location::location(string n, int i, double x_pos, double y_pos, int pop)
-    : node(n, i, x_pos, y_pos), population(pop){}
+location::location(string n, int i, double x_pos, double y_pos, int pop, lo_type t)
+    : node(n, i, x_pos, y_pos), population(pop), type(t){}
 
 //phuong thuc --------------------
 void location::display() const{
 	node::display();
+	cout << " - Location type: ";
+	if(type == lo_type::RESTAURANT){
+		cout << "Quan an/nha hang" << endl;
+	} else cout << "Khac" << endl;
     cout << " - Population: " << population << endl;
 }
 
