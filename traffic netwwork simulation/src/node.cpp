@@ -23,7 +23,7 @@ void node::display() const{
 }
 
 //===================================================
-//                  LOP KE THUA 
+//                    LOP KE THUA 
 //===================================================
 
 //=------------------- location ---------------------=
@@ -34,10 +34,7 @@ location::location(string n, int i, double x_pos, double y_pos, int pop, lo_type
 //phuong thuc --------------------
 void location::display() const{
 	node::display();
-	cout << " - Location type: ";
-	if(type == lo_type::RESTAURANT){
-		cout << "Quan an/nha hang" << endl;
-	} else cout << "Khac" << endl;
+	cout << " - Location type: " << to_string(type) << endl; 
     cout << " - Population: " << population << endl;
 }
 
